@@ -1,4 +1,4 @@
-baseURL = "https://blog.motionbug.com"
+baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Hugo Winston"
 themesDir = "../.."
@@ -16,11 +16,11 @@ paginate = 3
 
 [params]
   google_analytics_id = ""
-  twitter_handle = "@motionbug"
+  twitter_handle = "@zerostaticio"
 
-  showAuthorOnHomepage = true
-  showAuthorOnPosts = false
-  showPostsOnHomepage = false
+  showAuthorOnHomepage = false
+  showAuthorOnPosts = true
+  showPostsOnHomepage = true
 
   addFrame = true
   addDot = true
