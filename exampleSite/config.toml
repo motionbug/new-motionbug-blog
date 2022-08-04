@@ -1,6 +1,6 @@
 baseURL = "https://example.com"
-languageCode = "en-us"
-title = "Hugo Winston"
+languageCode = "en-uk"
+title = "blog &#11044; motionbug"
 themesDir = "../.."
 theme = "hugo-winston-theme"
 
