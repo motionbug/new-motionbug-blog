@@ -1,6 +1,6 @@
 baseURL = "https://example.com"
 languageCode = "en-uk"
-title = "blog &#11044; motionbug"
+title = "blog ● motionbug ● com"
 themesDir = "../.."
 theme = "hugo-winston-theme"
 
@@ -25,4 +25,4 @@ paginate = 3
   addFrame = true
   addDot = true
 
-  highlightColor = '#FDD935'
+  highlightColor = '#FA2742'
