@@ -1,5 +1,5 @@
 ---
-title: hopefully interesting, maybe boring
+title: hopefully interesting, sometimes boring
 description: Its there to manage it all
 ---
 
