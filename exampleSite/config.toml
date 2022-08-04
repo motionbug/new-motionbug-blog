@@ -12,11 +12,11 @@ paginate = 3
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.55.0"
+    min = "0.101.0"
 
 [params]
   google_analytics_id = ""
-  twitter_handle = "@zerostaticio"
+  twitter_handle = "@motionbug"
 
   showAuthorOnHomepage = false
   showAuthorOnPosts = true
@@ -25,4 +25,4 @@ paginate = 3
   addFrame = true
   addDot = true
 
-  highlightColor = '#7b16ff'
+  highlightColor = '#FDD935'
