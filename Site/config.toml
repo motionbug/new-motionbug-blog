@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://blog.motionbug.com"
 languageCode = "en-us"
 title = "Hugo Winston"
 themesDir = "../.."
@@ -16,7 +16,7 @@ paginate = 3
 
 [params]
   google_analytics_id = ""
-  twitter_handle = "@zerostaticio"
+  twitter_handle = "@motionbug"
 
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
