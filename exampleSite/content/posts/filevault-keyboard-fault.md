@@ -1,21 +1,13 @@
 ---
-title: So when it comes to computer naming don't use the serial number
-date: 2018-10-30
-description: 'As soon as Winston had dealt with each of the messages, he clipped his speakwritten corrections to the appropriate copy of the Times and pushed them into the pneumatic tube. '
+title: How to set the keyboard layout at the FileVault login window.
+date: 2022-08-05
+description: 'Did you ever find'
 image: images/about-mac.jpg
 ---
 
-## So you want to name your mac the serial number...
+## Keyboard mismatch
 
-
-Lorem markdownum comes; pro est [modo famulus](#pervenerat), quo quod neu
-manibus aether his nomine, Aurora, voce. Ipse virga res vidit profanis vocatos,
-quod vestigia cineres, dum silva in vapor. Tendite caelestibus quam, sub inplet
-prole eveniet **superi** rus proles venenis potestas Tereo pluribus sunto.
-
-Perque cessisse, hoc tum auras sinuosa. Pressant nec vinci primoque quoque
-funibus est: et tempore vetitorum? Coercet tantum adsensibus religata protinus
-venturas et Achilli, nat iam cum deque.
+I ran into an issue recently where my 
 
 ## Heading 2
 
