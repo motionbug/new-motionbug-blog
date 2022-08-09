@@ -15,7 +15,7 @@ paginate = 3
     min = "0.101.0"
 
 [params]
-  google_analytics_id = ""
+  google_analytics_id = "G-2ZQ4VHGFEZ"
   twitter_handle = "@motionbug"
 
   showAuthorOnHomepage = false
