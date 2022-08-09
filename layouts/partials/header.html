@@ -1,17 +1,18 @@
 <div class='header'>
   <a class="header-logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    {{ with .OutputFormats.Get "rss" -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
+  {{ with .OutputFormats.Get "rss" -}}
+  {{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
   <div class="menu-main">
     <ul>
 
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-            <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
-                <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-            </li>
-        {{end}}
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent " main" . }} active{{ end }}">
+        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      </li>
+      {{end}}
 
     </ul>
   </div>
