@@ -2,7 +2,7 @@
 title: How to set the keyboard layout at the FileVault login window.
 date: 2022-08-05
 description: 'Did you ever find'
-image: images/about-mac.jpg
+image: images/mac-kb.png
 ---
 
 ## Can't seem to login
