@@ -1,6 +1,6 @@
-baseURL = "https://example.com"
+baseURL = "https://blog.motionbug.com"
 languageCode = "en-uk"
-title = "blog ● motionbug ● com"
+title = "blog ● motionbug"
 themesDir = "../.."
 theme = "hugo-winston-theme"
 
@@ -15,14 +15,11 @@ paginate = 3
     min = "0.101.0"
 
 [params]
-  google_analytics_id =
+  google_analytics_id = ""
   twitter_handle = "@motionbug"
-
   showAuthorOnHomepage = false
   showAuthorOnPosts = true
   showPostsOnHomepage = true
-
   addFrame = true
   addDot = true
-
   highlightColor = '#FA2742'
