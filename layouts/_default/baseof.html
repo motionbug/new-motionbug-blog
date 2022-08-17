@@ -9,27 +9,34 @@
   <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
 
   {{ if .Site.IsServer }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath"
+  "css/style.css" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
   {{ else }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath"
+  "css/style.css" "enableSourceMap" false) }}
   <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
   {{ end }}
 
   {{ block "meta_tags" . }}
-    {{ if .Params.description }}<meta name="description" content="{{ .Params.description }}"/>{{ end }}
-    <meta property="og:title" content="{{ .Title }}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ .Permalink }}"/>
-    {{ if .Params.image }}<meta property="og:image" content="{{ .Params.image | absURL }}"/>{{ end }}
-    {{ if .Params.description }}<meta property="og:description" content="{{ .Params.description }}"/>{{ end }}
-    <meta name="twitter:card" content="summary"/>
-    {{ if .Site.Params.twitter_handle }}<meta name="twitter:site" content="{{ .Site.Params.twitter_handle }}"/>{{ end }}
-    {{ if .Site.Params.twitter_handle }}<meta name="twitter:creator" content="{{ .Site.Params.twitter_handle }}"/>{{ end }}
+  {{ if .Params.description }}
+  <meta name="description" content="{{ .Params.description }}" />{{ end }}
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  {{ if .Params.image }}
+  <meta property="og:image" content="{{ .Params.image | absURL }}" />{{ end }}
+  {{ if .Params.description }}
+  <meta property="og:description" content="{{ .Params.description }}" />{{ end }}
+  <meta name="twitter:card" content="summary" />
+  {{ if .Site.Params.twitter_handle }}
+  <meta name="twitter:site" content="{{ .Site.Params.twitter_handle }}" />{{ end }}
+  {{ if .Site.Params.twitter_handle }}
+  <meta name="twitter:creator" content="{{ .Site.Params.twitter_handle }}" />{{ end }}
   {{ end }}
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 {{ $themeStyle := slice "" }}
@@ -58,6 +65,10 @@
   {{ end }}
 
   {{ partial "google-analytics.html" . }}
-
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token": "1e345ae105474f348b784b7d5c5d9e2d"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </body>
+
 </html>
