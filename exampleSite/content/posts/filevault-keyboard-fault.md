@@ -36,7 +36,7 @@ atque, depositoque fugit pro est loquor, nempe!
 
 Check out the script below
 
-{{< gist f0820d062a7dcbaf5f18efc39d114f18 >}}
+{{< gist motionbug f0820d062a7dcbaf5f18efc39d114f18 >}}
 
 ## Animi igne
 
