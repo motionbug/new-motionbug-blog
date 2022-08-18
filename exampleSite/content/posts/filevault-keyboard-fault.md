@@ -36,7 +36,7 @@ atque, depositoque fugit pro est loquor, nempe!
 
 Check out the script below
 
-'''
+```
 #!/bin/bash
 ## Set default FV login keyboard to match default user keyboard layout
 
@@ -45,7 +45,7 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 loggedInUser=$(/bin/echo "show State:/Users/ConsoleUser" | /usr/sbin/scutil | /usr/bin/awk '/Name :/ { print $3 }')
 
 exit 0
-'''
+```
 
 ## Animi igne
 
