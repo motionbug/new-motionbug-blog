@@ -1,6 +1,7 @@
 a {
   color: var(--highlight-color);
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
@@ -14,6 +15,7 @@ h3 {
   color: var(--heading-color);
   font-family: var(--font-family-heading);
 }
+
 p {
   color: var(--text-color);
   font-family: var(--font-family-paragraph);
@@ -26,6 +28,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+
   li {
     list-style: none;
   }
@@ -33,6 +36,7 @@ ul {
 
 .content {
   font-size: 18px;
+
   p {
     font-size: 18px;
     line-height: 1.6;
@@ -40,30 +44,36 @@ ul {
     padding: 0;
     margin-bottom: 20px;
   }
+
   h1 {
     font-size: 40px;
     line-height: 1.6;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
+
     &:first-of-type {
       margin-top: 0;
     }
   }
+
   h2 {
     font-size: 28px;
     line-height: 1.4;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
+
     &:first-of-type {
       margin-top: 0;
     }
+
     @include breakpoint('small') {
       font-size: 30px;
       line-height: 1.4;
     }
   }
+
   h3 {
     font-size: 22px;
     line-height: 1.4;
@@ -71,66 +81,82 @@ ul {
     margin-top: 30px;
     margin-bottom: 20px;
   }
+
   ul,
   ol {
     margin-left: 0;
     margin-top: 10px;
     margin-bottom: 20px;
     list-style: disc;
+
     li {
       font-size: 18px;
       line-height: 20px;
       margin-bottom: 10px;
       margin-left: 0;
+
       @include breakpoint('small') {
         margin-left: 20px;
       }
     }
+
     @include breakpoint('small') {
       margin-left: 20px;
     }
   }
+
   a {
     text-decoration: underline;
-    &:hover {
-    }
+
+    &:hover {}
   }
+
   blockquote {
     border-left: 5px solid var(--highlight-color);
     margin: 30px 0;
     padding: 20px;
   }
+
   blockquote p {
     font-size: 20px;
     display: inline;
     color: var(--color-base-text);
   }
+
   img {
     margin: 40px 0 40px 0;
     max-width: 100%;
     height: auto;
+    border-radius: 25px;
   }
+
   figure {
     margin: 2.6rem 0 1.18rem;
+
     img {
       margin: 0;
     }
+
     figcaption {
       margin-top: 10px;
+
       h4 {
         margin: 0;
         font-size: 1rem;
         font-weight: bold;
       }
+
       p {
         margin: 0;
       }
     }
   }
+
   code,
   pre {
     font-family: var(--font-family-monospace);
   }
+
   .highlight {
     pre {
       border-radius: 3px;
@@ -150,6 +176,7 @@ ul {
 .footnotes {
   ol {
     list-style: decimal;
+
     li {
       list-style: decimal;
     }
