@@ -4,14 +4,7 @@
   --font-family-mono: monospace;
   --base-color: #ffffff;
   --base-offset-color: #eaeaea;
-
-  --highlight-color: {
-      {
-      .Site.Params.highlightColor | default "#7b16ff"
-    }
-  }
-
-  ;
+  --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};
   --heading-color: #1c1b1d;
   --text-color: #4e5157;
 }
@@ -35,8 +28,7 @@ $breakpoints: (
 @import 'main-menu-mobile';
 @import 'pygments/github';
 
-html,
-body {
+html, body {
   box-sizing: border-box;
 }
 
@@ -47,11 +39,9 @@ body {
   margin: 0;
   padding: 20px;
   overflow-x: hidden;
-
   @include breakpoint('small') {
     padding: 50px;
   }
-
   &.frame {
     min-height: 100vh;
     border: 18px solid var(--highlight-color);
