@@ -151,7 +151,10 @@ ul {
     }
   }
 
-
+  code,
+  pre {
+    font-family: var(--font-family-monospace);
+  }
 
   .highlight {
     pre {
