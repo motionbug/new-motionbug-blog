@@ -1,7 +1,7 @@
 ---
 title: Jamf Connect, Filevault and the USA Keyboard
 date: 2022-08-05
-description: 'Did you ever find'
+description: 'Filevault keyboard is set to USA ABC and your password doesn't work, what you need to do to change it'
 image: images/mac-kb.png
 ---
 
@@ -11,7 +11,7 @@ I recently ran into an issue where my customer was having a problem with the Fil
 
 ### Where does FileVault store the keyboard prefrences
 
-To fix this issue we needed to find out Where does the FileVault login window stores the keyboard settings? After some conversations with some really smart people we found that they keyboard is stored within the **nvram** on the mac.
+To fix this issue we needed to find out where does the FileVault login window store the keyboard settings? After some conversations with some really smart people [@scriptingmacos](https://twitter.com/scriptingosx) we found that they keyboard is stored within the **nvram** on the mac.
 
 A simple command `sudo nvram prev-lang:kbd="en_GB:2"` sets the keyboard to British within the FV window. So we could just create a simple policy that ran this command and fix all UK keyboards. That would work for the UK, but what about the rest of the people around the world.
 
