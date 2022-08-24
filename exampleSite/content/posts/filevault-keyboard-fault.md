@@ -13,10 +13,11 @@ I recently ran into an issue where my customer was having a problem with the Fil
 
 To fix this issue we needed to find out Where does the FileVault login window stores the keyboard settings? After some conversations with some really smart people we found that they keyboard is stored within the **nvram** on the mac.
 
-A simple command `sudo nvram prev-lang:kbd="en_GB:2"` sets the keyboard to British within the FV window. So we could just create a simple policy that ran this command and fix all UK keyboards. The problem was, we might have people 
+A simple command `sudo nvram prev-lang:kbd="en_GB:2"` sets the keyboard to British within the FV window. So we could just create a simple policy that ran this command and fix all UK keyboards. That would work for the UK, but what about the rest of the people around the world.
 
 ### Finding the right IDs for each keyboard
 
+Thanks to the **macadmins** slack 
 https://macadmins.slack.com/archives/CCWGRUFKN/p1643833928628799?thread_ts=1643822101.694119&cid=CCWGRUFKN
 
 https://raw.githubusercontent.com/acidanthera/OpenCorePkg/ef2db45050c4aed6aa2e93d7c00df45706ab4e13/Utilities/AppleKeyboardLayouts/AppleKeyboardLayouts.txt
