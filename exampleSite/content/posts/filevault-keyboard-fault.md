@@ -1,7 +1,7 @@
 ---
 title: Jamf Connect, Filevault and the USA Keyboard
 date: 2022-08-05
-description: 'Filevault keyboard is set to USA ABC and your password doesn't work, what you need to do to change it'
+description: 'Filevault keyboard is set to USA ABC and your password doesn't work, will walk you through on what you need to do to change it to your local language'
 image: images/mac-kb.png
 ---
 
