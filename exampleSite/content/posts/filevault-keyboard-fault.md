@@ -17,27 +17,23 @@ A simple command `sudo nvram prev-lang:kbd="en_GB:2"` sets the keyboard to Briti
 
 ### Finding the right IDs for each keyboard
 
-Thanks to the **macadmins** slack 
-https://macadmins.slack.com/archives/CCWGRUFKN/p1643833928628799?thread_ts=1643822101.694119&cid=CCWGRUFKN
+Thanks to the **macadmins** slack, there was a [thread discussing](https://macadmins.slack.com/archives/CCWGRUFKN/p1643833928628799?thread_ts=1643822101.694119&cid=CCWGRUFKN) the `nvram` command and someone found a list that had all the keyboard IDs within some dat file. The OpenCore projects has [a list with all the keyboard layout IDs](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/ef2db45050c4aed6aa2e93d7c00df45706ab4e13/Utilities/AppleKeyboardLayouts/AppleKeyboardLayouts.txt)
 
-https://raw.githubusercontent.com/acidanthera/OpenCorePkg/ef2db45050c4aed6aa2e93d7c00df45706ab4e13/Utilities/AppleKeyboardLayouts/AppleKeyboardLayouts.txt
+## How to Fix
 
+First we need to get the current users default keyboard reading the ID from `com.apple.HIToolbox.plist`
 
-## The Fix
+```bash 
+#Current user default keyboard Number
+keyboardID=$(defaults read /Users/${loggedInUser}/Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources | awk -F '["=;]' '/KeyboardLayout ID/ {print $4}' | tr -d ' ')
+
+```
+
+Once we have that we can lookup the keyboard from the [list](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/ef2db45050c4aed6aa2e93d7c00df45706ab4e13/Utilities/AppleKeyboardLayouts/AppleKeyboardLayouts.txt) from the OpenCore project.
+
+## Final Script
+The final script will find the keyboard, lookup the name/id and run the `nvram` command. Easy to add this to a policy during the onboarding process to fix the keyboard on within FV login window.
 
 {{< gist motionbug f0820d062a7dcbaf5f18efc39d114f18 >}}
 
-Check out the script below
-
-```
-#!/bin/bash
-## Set default FV login keyboard to match default user keyboard layout
-
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin
-
-loggedInUser=$(/bin/echo "show State:/Users/ConsoleUser" | /usr/sbin/scutil | /usr/bin/awk '/Name :/ { print $3 }')
-
-exit 0
-```
-
-
+Hope this helps, it helped the rollout that I was working on.
