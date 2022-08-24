@@ -22,6 +22,8 @@ https://raw.githubusercontent.com/acidanthera/OpenCorePkg/ef2db45050c4aed6aa2e93
 
 ## The Fix
 
+{{< gist motionbug f0820d062a7dcbaf5f18efc39d114f18 >}}
+
 Check out the script below
 
 ```
