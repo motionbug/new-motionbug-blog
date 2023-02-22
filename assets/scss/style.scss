@@ -27,8 +27,10 @@ $breakpoints: (
 @import 'main-menu';
 @import 'main-menu-mobile';
 @import 'pygments/github';
+@import 'pygments/gist';
 
-html, body {
+html,
+body {
   box-sizing: border-box;
 }
 
@@ -39,9 +41,11 @@ body {
   margin: 0;
   padding: 20px;
   overflow-x: hidden;
+
   @include breakpoint('small') {
     padding: 50px;
   }
+
   &.frame {
     min-height: 100vh;
     border: 18px solid var(--highlight-color);

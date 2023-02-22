@@ -1,63 +1,31 @@
 ---
-title: How to set the keyboard layout at the FileVault login window.
+title: Jamf Connect, Filevault and the USA Keyboard
 date: 2022-08-05
-description: 'Did you ever find'
-image: images/mac-kb.png
+description: 'Filevault keyboard is set to USA ABC and your password does not work. I will walk you through on what you need to do to change it to your local language'
+image: images/mac-kb.jpg
 ---
 
-## Can't seem to login
+## "My password doesn't seem to work!"
 
-I recently ran into an issue where my password didn't work when I tried to login at the FileVault window. This was a newly setup mac. I ran through automated device enrolment, logged into [Jamf Connect](https://www.jamf.com/connect) and ran through a custom on boarding workflow and on the next reboot tried to login. I setup my keyboard English-GB, but at the login window the keyboard was set to English-US. So there was a mismatch, the one the system was set to and somehow FileVault got or was set to another.
+I recently ran into an issue where my customer was having a problem with the FileVault login window and entering their password. After a bit of troubleshooting, we figured it out. There was a pretty strong password policy in place and being a UK organisation the keyboard was set to British English, but at the FileVault login windows the keyboard was American English. Big problem as the special characters like the "**@**" or "**#**" are not in the same spot.
 
-## Where are the keyboard settings stored?
+### Where does FileVault store the keyboard preferences
 
-## Heading 2
+Fixing this issue, we needed to find out where does the FileVault login window store the keyboard settings? After some conversations with some really smart people [@scriptingosx](https://twitter.com/scriptingosx) we found that they keyboard is stored within the **NVRAM** on the mac.
 
-Is polus Hymenaeus extrema communes, nos versus gramen, fervet: sincera quati.
-Dixit extulerat; iunctas et [Aeaciden Illa](http://egofateri.net/), visa
-[viris](http://euntemcrepuscula.com/subiecta.html). Ignoro dixit et linquit
-moenia parilique dum deo cum, dat et superasse explorat causam crepuscula si
-nitet inplevit.
+A simple command `sudo nvram prev-lang:kbd="en_GB:2"` sets the keyboard to British within the FV window. We could just create a simple policy that ran this command and fix all UK keyboards. That would work for the UK, but what about the rest of the people around the world?
 
-- Saxum sustinuit pugnatum medere temptamenta vellera mihi
-- Verbis meorum canes intraverat simul in quem
-- Cutis mirabile tandemque ut in dominis Abarin
-- Marmore deus orant
+### Finding the right IDs for each keyboard
 
-### Heading 3
+Thanks to the **macadmins** slack, there was a [thread discussing](https://macadmins.slack.com/archives/CCWGRUFKN/p1643833928628799?thread_ts=1643822101.694119&cid=CCWGRUFKN) the `nvram` command, and someone found a list that had all the keyboard IDs within an Apple dat file. The OpenCore projects has [a list with all the keyboard layout IDs](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/ef2db45050c4aed6aa2e93d7c00df45706ab4e13/Utilities/AppleKeyboardLayouts/AppleKeyboardLayouts.txt)
 
-Oriente nec radios nurus, quod undas, occupat conpescit femina est; resistite
-regno armenta suspirat. Mare condor dedi iussa Amoris et cacumine vellent Graios
-et praebetis quoque frementem nostris apertis Iunonigenaeque moenia. Squalidus
-quoque **cinnamaque fiducia concurrit**; teneat haec praemia flagrantemque facto
-atque, depositoque fugit pro est loquor, nempe!
+### How to fix
 
-## The Fix Script
+First we need to get the current user's default keyboard reading the ID from `com.apple.HIToolbox.plist` and once we have that we can look up the keyboard from the OpenCore [list](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/ef2db45050c4aed6aa2e93d7c00df45706ab4e13/Utilities/AppleKeyboardLayouts/AppleKeyboardLayouts.txt).
 
-Check out the script below
+### Final script
+The final script will find the keyboard, lookup the name/ID and run the `nvram` command. Easy to add this to a policy during the onboarding process to fix the keyboard on within FV login window.
 
-```
-#!/bin/bash
-## Set default FV login keyboard to match default user keyboard layout
+{{< gist motionbug f0820d062a7dcbaf5f18efc39d114f18 >}}
 
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin
-
-loggedInUser=$(/bin/echo "show State:/Users/ConsoleUser" | /usr/sbin/scutil | /usr/bin/awk '/Name :/ { print $3 }')
-
-exit 0
-```
-
-## Animi igne
-
-Saeva gaudia; per est subit Ereboque et altaque repetunt repperit aegida
-ingenium humumque vitium quoque distantia vidit. Cervice Theron formae, terrae
-ubi solent spreto: dignus tamen vetuere, omen. Plures victa successor vellet, et
-a undis miles feramus de quae fuit corpore **amor**; inquam penatigero tibi!
-
-> At germana illo undique ducis et utque leti apta amictu, ego avibus. Viridis
-> Munus est tutos posse sede, et est inquit, iussis. Ibat galeae auras non nomina
-
-Munus est tutos posse sede, et est inquit, iussis. Ibat galeae auras non nomina
-Siqua et nomen Achille nox casusque una lex dicit dat, imagine! Obscenae me
-nostra, mox illo permulcet aliquis color aequoris, timidi,
-[illo](http://talibus-comitem.org/invia)?
+Hope this helps, it helped the rollout that I was working on.

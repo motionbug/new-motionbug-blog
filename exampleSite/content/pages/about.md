@@ -8,4 +8,4 @@ menu:
 
 ## Expat Canadian living in the Netherlands
 
-It's about time that I start writing about the issues I find a solution too.
+It's about time that I start writing about the issues/solutions I find.
