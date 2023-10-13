@@ -17,10 +17,10 @@ paginate = 6
 [params]
   google_analytics_id = ""
   twitter_handle = "@motionbug"
-  showAuthorOnHomepage = true
-  showAuthorOnPosts = false
+  showAuthorOnHomepage = false
+  showAuthorOnPosts = true
   showIntroContentOnHomepage = true
-  showPostsOnHomepage = false
+  showPostsOnHomepage = true
   usePaginationOnHomepage = false
   limitPostsOnHomepage = 3 # only used if usePaginationOnHomepage is false
   sortPostsByDateOldestFirst = false
@@ -30,7 +30,7 @@ paginate = 6
   baseColor = "#ffffff"
   baseOffsetColor = "#eaeaea"
   headingColor = "#FA2742"
-  textColor = "#4e5157"
+  textColor = "#000000"
   dotColor = "#FA2742"
   enableGoogleFonts = true 
   googleFontsUrl = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
