@@ -19,10 +19,17 @@ paginate = 6
   twitter_handle = "@motionbug"
   showAuthorOnHomepage = false
   showAuthorOnPosts = true
+  showIntroContentOnHomepage = true
   showPostsOnHomepage = true
+  usePaginationOnHomepage = false
+  limitPostsOnHomepage = 3 # only used if usePaginationOnHomepage is false
+  sortPostsByDateOldestFirst = false
   addFrame = true
   addDot = true
   highlightColor = '#FA2742'
+  baseColor = "#ffffff"
+  baseOffsetColor = "#eaeaea"
+  dotColor = "#FA2742"
   enableGoogleFonts = true 
   googleFontsUrl = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
   fontFamilyHeading = "Poppins"
@@ -37,25 +44,14 @@ paginate = 6
       unsafe = true
       xhtml = false
 
-
 [menu]
   [[menu.main]]
     identifier = 'home'
-    name = 'Home'
+    name = 'home'
     url = '/'
     weight = 1
   [[menu.main]]
-    name = "Blog"
-    identifier = "blog"
-    weight = 2
-    url = "/posts/"
-  [[menu.main]]
-    name = "About"
-    identifier = "about"
-    weight = 3
-    url = "/About/"
-  [[menu.main]]
-    name = "Tags"
+    name = "tags"
     identifier = "tags"
     weight = 4
     url = "/tags/"

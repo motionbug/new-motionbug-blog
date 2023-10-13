@@ -13,11 +13,11 @@
     {{ end }}
   </div>
 
-  {{ if .Site.Params.showPostsOnHomepage }}
+  {{ if .Site.Params.showOnHomepage }}
 
-    {{ $pages := where .Site.RegularPages "Type" "posts" }}
+    {{ $pages := where .Site.RegularPages "Type" "" }}
     {{ $sorted := ($pages.ByParam "date").Reverse }}
-    {{ if .Site.Params.sortPostsByDateOldestFirst }}
+    {{ if .Site.Params.sortByDateOldestFirst }}
       {{ $sorted = $pages.ByParam "date" }}
     {{ end }}
 
@@ -29,11 +29,11 @@
       {{ end }}
       {{ partial "paginator" . }}
     {{ else }}
-      {{ $limit := .Site.Params.limitPostsOnHomepage | default 3 }}
+      {{ $limit := .Site.Params.limitOnHomepage | default 3 }}
       {{ range first $limit $sorted}}
         {{ .Render "summary" }}
       {{ end }}
-      <a class="view-more" href="/posts">More Posts</a>
+      <a class="view-more" href="/">More </a>
     {{ end }}
   {{ end }}
 
