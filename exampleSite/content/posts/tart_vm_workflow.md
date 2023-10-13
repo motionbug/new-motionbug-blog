@@ -6,6 +6,17 @@ image: https://blog.motionbug.com/images/blog/header-vm.webp
 tags: ['vm', 'applesilicon']
 ---
 
+**Table of Contents**
+- [The Apps](#the-apps)
+  - [Free](#free)
+  - [Paid](#paid)
+- [Cirrus Labs - tart](#cirrus-labs---tart)
+  - [How to install](#how-to-install)
+  - [Installing with Brew](#installing-with-brew)
+  - [Pulling down an image](#pulling-down-an-image)
+  - [Save some time](#save-some-time)
+
+
 Today, we’ll dive into the world of virtualization on macOS, focusing on Apple Silicon. There are some changes, the biggest change is that all virtualisation within macOS uses the [Apple virtualization framework](https://developer.apple.com/documentation/virtualization).
 
 > 💡 The Virtualization framework provides high-level APIs for creating
@@ -18,16 +29,6 @@ Today, we’ll dive into the world of virtualization on macOS, focusing on Apple
 > types, including network, socket, serial port, storage, entropy, and
 > memory-balloon devices.
 
----
-
-- [The Apps](#the-apps)
-  - [Free](#free)
-  - [Paid](#paid)
-- [Cirrus Labs - tart](#cirrus-labs---tart)
-  - [How to install](#how-to-install)
-  - [Installing with Brew](#installing-with-brew)
-  - [Pulling down an image](#pulling-down-an-image)
-  - [Save some time](#save-some-time)
 
 
 In this post we will dive into various options available for virtual machines (VMs) on your Applie Silicon Mac, all applicaitons will be utilizing the Apple virtualization framework. The difference lies in how each application interprets this framework. Choose an application that aligns best with your workflow from the options listed.
