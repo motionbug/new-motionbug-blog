@@ -34,7 +34,7 @@ In this post we will dive into various options available for virtual machines (V
 ---
 
 ## Tart
-![vmheaderspace](https://blog.motionbug.com/imsages/blog/vm-header.jpg)
+![vmheaderspace](https://blog.motionbug.com/images/blog/vm-header.jpg)
 
 Tart is a virtualization toolset to build, run and manage macOS and Linux virtual machines on Apple Silicon. Out of all the ones here, this would be the geekest; if that is a word. It really is command line only (there is a GUI to show your VM), but the tool is all about managing a almost like repository of VMs.
 
