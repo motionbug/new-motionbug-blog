@@ -1,7 +1,5 @@
-# Hugo Winston Theme
+# Repo for my blog
 
-Hugo Winston is a bold minimal blogging theme for my [website](https://blog.motionbug.com)
+Check it out [here](https://blog.motionbug.com)
 
-[Live Demo](https://hugo-winston.netlify.app/) |
-[Zerostatic Themes](https://www.zerostatic.io/)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/df0d86b4-80aa-4c8f-af45-fea410428502/deploy-status)](https://app.netlify.com/sites/spectacular-kitten-105fe8/deploys)
