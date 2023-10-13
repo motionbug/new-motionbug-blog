@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 theme = "hugo-winston-theme"
 themesDir = "themes"
-title = "motionbug &#128027;"
+title = "motionbug"
 paginate = 3
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
@@ -57,7 +57,12 @@ pygmentsUseClasses = true
     weight = 2
     url = "/posts/"
   [[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 3
+    url = "pages/about/"
+  [[menu.main]]
     name = "Tags"
     identifier = "tags"
-    weight = 3
+    weight = 4
     url = "/tags/"
