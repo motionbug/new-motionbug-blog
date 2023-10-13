@@ -60,7 +60,7 @@ pygmentsUseClasses = true
     name = "About"
     identifier = "about"
     weight = 3
-    url = "/About/"
+    url = "https://blog.motionbug.com/pages/about/"
   [[menu.main]]
     name = "Tags"
     identifier = "tags"
