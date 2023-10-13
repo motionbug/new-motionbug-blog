@@ -1,22 +1,20 @@
 <div class='header'>
-  <a class="header-logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-  {{ with .OutputFormats.Get "rss" -}}
-  {{ printf `
-  <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-  {{ end -}}
+  <a class="header-logo" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
   <div class="menu-main">
     <ul>
-
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
-      <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent " main" . }} active{{ end }}">
-        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+      {{ $active = or $active (eq (.URL | relLangURL) ($currentPage.RelPermalink | relLangURL)) }}
+      <li class="menu-item-{{ .Name | lower }} {{ if $active }}active{{ end }}">
+        <a href="{{.URL}}">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+        </a>
       </li>
       {{end}}
-
     </ul>
   </div>
-
   <div id="toggle-menu-main-mobile" class="hamburger-trigger">
     <button class="hamburger">Menu</button>
   </div>
