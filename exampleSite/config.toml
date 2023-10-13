@@ -48,21 +48,21 @@ pygmentsUseClasses = true
 [menu]
   [[menu.main]]
     identifier = 'home'
-    name = 'Home'
+    name = '[Home]'
     url = '/'
     weight = 1
   [[menu.main]]
-    name = "Blog"
+    name = "[Blog]"
     identifier = "blog"
     weight = 2
     url = "/posts/"
   [[menu.main]]
-    name = "About"
+    name = "[About]"
     identifier = "about"
     weight = 3
     url = "https://blog.motionbug.com/pages/about/"
   [[menu.main]]
-    name = "Tags"
+    name = "[Tags]"
     identifier = "tags"
     weight = 4
     url = "/tags/"
