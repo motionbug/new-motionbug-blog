@@ -1,7 +1,7 @@
 ---
-title: Using cirruslabs/tart to manage your MDM test workflows
-date: 2023-03-05
-description: 'Tart is a virtualization toolset to build, run and manage macOS and Linux virtual machines (VMs) on Apple Silicon.'
+title: Exploring macOS Virtualization - Part 1
+date: 2023-10-10
+description: 'In this post we will dive into various options available for virtual machines (VMs) on your Applie Silicon Mac'
 image: https://blog.motionbug.com/images/blog/header-vm.webp
 ---
 
