@@ -17,12 +17,10 @@ paginate = 6
 [params]
   google_analytics_id = ""
   twitter_handle = "@motionbug"
-  showAuthorOnHomepage = false
+  showAuthorOnHomepage = ture
   showAuthorOnPosts = true
   showIntroContentOnHomepage = true
   showPostsOnHomepage = true
-  usePaginationOnHomepage = false
-  limitPostsOnHomepage = 3 # only used if usePaginationOnHomepage is false
   sortPostsByDateOldestFirst = false
   addFrame = true
   addDot = true
