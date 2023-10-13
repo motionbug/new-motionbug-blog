@@ -1,13 +1,12 @@
-baseURL = "https://blog.motionbug.com"
-languageCode = "en-uk"
-title = "blog ● motionbug"
-themesDir = "../.."
+baseURL = "/"
+languageCode = "en-us"
 theme = "hugo-winston-theme"
-
+themesDir = "themes"
+title = "Hugo Winston Theme"
+paginate = 3
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
-paginate = 6
 
 [module]
   [module.hugoVersion]
@@ -17,16 +16,22 @@ paginate = 6
 [params]
   google_analytics_id = ""
   twitter_handle = "@motionbug"
-  showAuthorOnHomepage = false
+  showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showIntroContentOnHomepage = true
-  showPostsOnHomepage = true
+  showPostsOnHomepage = false
   usePaginationOnHomepage = false
   limitPostsOnHomepage = 3 # only used if usePaginationOnHomepage is false
   sortPostsByDateOldestFirst = false
-  addFrame = true
   addDot = true
-  highlightColor = '#FA2742'
+  addFrame = true
+  highlightColor = '#7b16ff'
+  baseColor = "#ffffff"
+  baseOffsetColor = "#eaeaea"
+  headingColor = "#1c1b1d"
+  textColor = "#4e5157"
+  dotColor = "#7b16ff"
+  enableGoogleFonts = true 
   googleFontsUrl = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
   fontFamilyHeading = "Poppins"
   fontFamilyParagraph = "Helvetica"
@@ -41,6 +46,21 @@ paginate = 6
       xhtml = false
 
 [menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    weight = 2
+    url = "/posts/"
+  [[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 3
+    url = "/About/"
   [[menu.main]]
     name = "Tags"
     identifier = "tags"
