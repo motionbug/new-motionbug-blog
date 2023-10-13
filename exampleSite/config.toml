@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 theme = "hugo-winston-theme"
 themesDir = "themes"
-title = "Hugo Winston Theme"
+title = "motionbug U+1F41B"
 paginate = 3
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
@@ -16,7 +16,7 @@ pygmentsUseClasses = true
 [params]
   google_analytics_id = ""
   twitter_handle = "@motionbug"
-  showAuthorOnHomepage = true
+  showAuthorOnHomepage = false
   showAuthorOnPosts = false
   showIntroContentOnHomepage = true
   showPostsOnHomepage = true
