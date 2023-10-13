@@ -2,11 +2,12 @@
 title: Using cirruslabs/tart to manage your MDM test workflows
 date: 2023-03-05
 description: 'Tart is a virtualization toolset to build, run and manage macOS and Linux virtual machines (VMs) on Apple Silicon.'
-image: https://github.com/cirruslabs/tart/raw/main/Resources/AppIcon.png
+image: https://blog.motionbug.com/images/blog/header-vm.webp
 ---
 
 
 Today, we’ll dive into the world of virtualization on macOS, focusing on Apple Silicon. There are some changes, the biggest change is that all virtualisation within macOS uses the [Apple virtualization framework](https://developer.apple.com/documentation/virtualization).
+
 
 > 💡The Virtualization framework provides high-level APIs for creating
 > and managing virtual machines (VM) on Apple silicon and Intel-based
@@ -18,7 +19,14 @@ Today, we’ll dive into the world of virtualization on macOS, focusing on Apple
 > types, including network, socket, serial port, storage, entropy, and
 > memory-balloon devices.
 
-With that in mind lets dive in some options that we have when it comes to VMs on your mac. Remember that they all maybe using the same framework, but it is the interpretation of that framework that can make each standout. All depending on your workflow
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTc4NjcxMThdfQ==
--->
+In this post we will dive into various options available for virtual machines (VMs) on your Applie Silicon Mac, all applicaitons will be utilizing the Apple virtualization framework. The difference lies in how each application interprets this framework. Choose an application that aligns best with your workflow from the options listed.
+
+## Applications
+#### Free
+- [Cirrus Labs - tart ](https://tart.run/)
+- [Viable](https://eclecticlight.co/2022/07/14/introducing-viable-to-virtualise-macos-on-apple-silicon-macs/)
+- [UTM](https://github.com/utmapp/UTM)
+- [VirtualBuddy](https://github.com/insidegui/VirtualBuddy#virtualbuddy)
+#### Paid
+- [VMware Fusion](https://www.vmware.com/products/fusion.html) 
+- [Paralells Desktop 19](https://www.parallels.com/)
