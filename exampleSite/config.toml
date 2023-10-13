@@ -57,12 +57,7 @@ pygmentsUseClasses = true
     weight = 2
     url = "/posts/"
   [[menu.main]]
-    name = "About"
-    identifier = "about"
-    weight = 3
-    url = "/About/"
-  [[menu.main]]
     name = "Tags"
     identifier = "tags"
-    weight = 4
+    weight = 3
     url = "/tags/"
