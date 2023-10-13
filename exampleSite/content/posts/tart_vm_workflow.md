@@ -3,6 +3,7 @@ title: Exploring macOS Virtualization - Part 1
 date: 2023-10-10
 description: 'In this post we will dive into various options available for virtual machines (VMs) on your Applie Silicon Mac'
 image: https://blog.motionbug.com/images/blog/header-vm.webp
+tags: ['vm', 'applesilicon']
 ---
 
 
