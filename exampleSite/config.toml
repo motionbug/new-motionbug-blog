@@ -16,7 +16,7 @@ pygmentsUseClasses = true
 [params]
   google_analytics_id = ""
   twitter_handle = "@motionbug"
-  showAuthorOnHomepage = true
+  showAuthorOnHomepage = false
   showAuthorOnPosts = true
   showIntroContentOnHomepage = false
   showPostsOnHomepage = true

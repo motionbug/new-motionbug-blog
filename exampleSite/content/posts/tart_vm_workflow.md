@@ -31,3 +31,20 @@ In this post we will dive into various options available for virtual machines (V
 - [**VMware Fusion**](https://www.vmware.com/products/fusion.html) 
 - [**Paralells Desktop 19**](https://www.parallels.com/)
 
+---
+
+## Tart
+![vmheaderspace](https://blog.motionbug.com/imsages/blog/vm-header.jpg)
+
+Tart is a virtualization toolset to build, run and manage macOS and Linux virtual machines on Apple Silicon. Out of all the ones here, this would be the geekest; if that is a word. It really is command line only (there is a GUI to show your VM), but the tool is all about managing a almost like repository of VMs.
+
+Tart works with macOS and Linux and they do offer a snapshot sytle image that you can download to get started rather quickly.
+
+### How to install
+
+### Pulling down an image
+
+### Save some time
+
+##
+
