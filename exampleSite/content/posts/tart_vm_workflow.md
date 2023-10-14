@@ -29,8 +29,6 @@ Today, we’ll dive into the world of virtualization on macOS, focusing on Apple
 > types, including network, socket, serial port, storage, entropy, and
 > memory-balloon devices.
 
-
-
 In this post we will dive into various options available for virtual machines (VMs) on your Applie Silicon Mac, all applicaitons will be utilizing the Apple virtualization framework. The difference lies in how each application interprets this framework. Choose an application that aligns best with your workflow from the options listed.
 
 ## The Apps
@@ -65,7 +63,7 @@ You can either install tart with `brew` or you can download and install the pack
 
 `brew install cirruslabs/cli/tart`
 
-tart is now installed but you can't really do anything with it just yet. You either need to pull an image from their repo, or you need to install from an *macos ipsw*
+tart is now installed but you can't really do anything with it just yet. You either need to pull an image from their repo, or you need to install from an [*macos ipsw*](https://ipsw.me/product/Mac)
 
 ### Pulling down an image
 
