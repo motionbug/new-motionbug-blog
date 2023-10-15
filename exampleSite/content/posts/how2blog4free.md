@@ -90,3 +90,7 @@ Git repo, vs code on the mac with the following plugins
 - how does Netlify work
 - where does it host the stuff
 - how does the SSL cert work… 
+
+
+URL - https://gohugo.io/hosting-and-deployment/hosting-on-netlify/
+

@@ -3,24 +3,22 @@ title: Exploring macOS Virtualization - Part 1
 date: 2023-10-10
 description: 'In this post we will dive into various options available for virtual machines (VMs) on your Applie Silicon Mac'
 image: https://blog.motionbug.com/images/blog/header-vm.webp
-tags: ['vm', 'applesilicon']
+tags: ['vm', 'applesilicon', 'virtualization']
 ---
 
-## Part 1 - The Free Apps
+Part 1 - The Free Apps
 
 **Table of Contents**
+
 - [The Apps](#the-apps)
   - [Free](#free)
   - [Paid](#paid)
 - [Cirrus Labs - tart](#cirrus-labs---tart)
-  - [How to install](#how-to-install)
-  - [Installing with Brew](#installing-with-brew)
+- [How to install](#how-to-install)
   - [Pulling down an image](#pulling-down-an-image)
   - [Save some time](#save-some-time)
 
-
 Today, we’ll dive into the world of virtualization on macOS, focusing on Apple Silicon. There are some changes, the biggest change is that all virtualisation within macOS uses the [Apple virtualization framework](https://developer.apple.com/documentation/virtualization).
-
 
 > 💡 The Virtualization framework provides high-level APIs for creating
 > and managing virtual machines (VM) on Apple silicon and Intel-based
@@ -47,15 +45,14 @@ In this post we will dive into various options available for virtual machines (V
 
 - [**VMware Fusion**](https://www.vmware.com/products/fusion.html)
 - [**Paralells Desktop 19**](https://www.parallels.com/)
- 
----
 
+---
 
 ## Cirrus Labs - tart
 
 ![vmheaderspace](https://blog.motionbug.com/images/blog/vm-header.jpg)
 
-Cirrus Labs’ Tart is a specialized virtualization toolset designed for building, running, and managing macOS and Linux virtual machines on Apple Silicon, significantly enhancing performance and automation capabilities for CI[^1] engineers. 
+Cirrus Labs' 🥧 Tart is a specialized virtualization toolset designed for building, running, and managing macOS and Linux virtual machines on Apple Silicon, significantly enhancing performance and automation capabilities for CI[^1] engineers.
 
 Most of your interaction with tart is via the command line but there is a GUI app that will render your VM.
 
@@ -69,15 +66,16 @@ If you want to follow along, then I would suggest install tart, and you can [rea
 
 Once you have tart installed you will either need to pull down an image or you will need to install a fresh VM from a [macOS ipsw](https://mrmacintosh.com/apple-silicon-m1-full-macos-restore-ipsw-firmware-files-database/).
 
-Cool thing is, you can have different version of macOS for testing.
-
-
-
 ### Pulling down an image
 
+Cirrus Labs host their own images, the following command can pull down a finished **sonama-base** image.
+
+```shell
+tart clone ghcr.io/cirruslabs/macos-sonoma-base:latest sonoma-base
+```
+
+
 ### Save some time
-
-
 
 [^1]: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) In case like me you had to look this up.
 
