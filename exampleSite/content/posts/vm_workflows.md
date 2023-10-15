@@ -6,6 +6,8 @@ image: https://blog.motionbug.com/images/blog/header-vm.webp
 tags: ['vm', 'applesilicon']
 ---
 
+## Part 1 - The Free Apps
+
 **Table of Contents**
 - [The Apps](#the-apps)
   - [Free](#free)
@@ -18,6 +20,7 @@ tags: ['vm', 'applesilicon']
 
 
 Today, we’ll dive into the world of virtualization on macOS, focusing on Apple Silicon. There are some changes, the biggest change is that all virtualisation within macOS uses the [Apple virtualization framework](https://developer.apple.com/documentation/virtualization).
+
 
 > 💡 The Virtualization framework provides high-level APIs for creating
 > and managing virtual machines (VM) on Apple silicon and Intel-based
@@ -47,24 +50,35 @@ In this post we will dive into various options available for virtual machines (V
  
 ---
 
+
 ## Cirrus Labs - tart
 
 ![vmheaderspace](https://blog.motionbug.com/images/blog/vm-header.jpg)
 
-Tart is a virtualization toolset to build, run and manage macOS and Linux virtual machines on Apple Silicon. Out of all the ones here, this would be the geekest; if that is a word. It really is command line only (there is a GUI to show your VM), but the tool is all about managing a almost like repository of VMs.
+Cirrus Labs’ Tart is a specialized virtualization toolset designed for building, running, and managing macOS and Linux virtual machines on Apple Silicon, significantly enhancing performance and automation capabilities for CI[^1] engineers. 
 
-Tart shines on the use of images. They offer a snapshot sytle image, already setup, automatically logged in with SSH and all other small things enabled. You can just pull the image from their repo and get start rather quickly.
+Most of your interaction with tart is via the command line but there is a GUI app that will render your VM.
 
-### How to install
+The killer feature with Tart is the use of images. You can make your own[^2] or use the ones already made within their repository.
 
-You can either install tart with `brew` or you can download and install the package from the github repo. For more advanced installation instructions, [read the quick start guide.](https://tart.run/quick-start/)
+## How to install
 
-### Installing with Brew
+You have two choices when it comes to installing brew, you have ‘brew’ or you can install via package.
 
-`brew install cirruslabs/cli/tart`
+If you want to follow along, then I would suggest install tart, and you can [read the quick start guide.](https://tart.run/quick-start/)
 
-tart is now installed but you can't really do anything with it just yet. You either need to pull an image from their repo, or you need to install from an [*macos ipsw*](https://ipsw.me/product/Mac)
+Once you have tart installed you will either need to pull down an image or you will need to install a fresh VM from a [macOS ipsw](https://mrmacintosh.com/apple-silicon-m1-full-macos-restore-ipsw-firmware-files-database/).
+
+Cool thing is, you can have different version of macOS for testing.
+
+
 
 ### Pulling down an image
 
 ### Save some time
+
+
+
+[^1]: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) In case like me you had to look this up.
+
+[^2]: Future post in the making on how to create your own images for tart.
