@@ -46,7 +46,7 @@ In this post we will dive into various options available for virtual machines (V
 
 - [**VMware Fusion**](https://www.vmware.com/products/fusion.html)
 - [**Paralells Desktop 19**](https://www.parallels.com/)
-
+ 
 ---
 
 ## Cirrus Labs - tart
