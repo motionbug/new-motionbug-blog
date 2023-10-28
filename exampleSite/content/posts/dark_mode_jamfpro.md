@@ -37,3 +37,5 @@ Up pops up the boost control panel
 ## In conclusion
 
 So an easy dark mode for Jamf Pro 11. Once you have set this up you can create different accented colors boosts for each of your Jamf Pro instances. I have a couple instances of Jamf Pro, I have created a custom boost for each Jamf Pro server that I visit.
+
+![finished](https://blog.motionbug.com/images/blog/darkmode.jpg)
