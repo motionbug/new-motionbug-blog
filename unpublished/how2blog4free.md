@@ -12,8 +12,7 @@ I pay for the domain
 
 # What I use
 
-
-## What is Hugo 
+## What is Hugo
 
 Hugo is a static site generator that takes a directory with content and templates and renders them into a fully static website. Here's a more detailed breakdown of how Hugo operates to generate static websites:
 
@@ -26,7 +25,7 @@ Hugo is a static site generator that takes a directory with content and template
     - In this file, you specify themes, URL structures, and other site-wide settings.
 
 3. **Themes and Templates**:
-    - Hugo uses templates to define the HTML structure of the pages. 
+    - Hugo uses templates to define the HTML structure of the pages.
     - Themes in Hugo encapsulate a set of templates, static files, and other assets. Users can create their own themes or use existing ones.
 
 4. **Shortcodes**:
@@ -55,7 +54,6 @@ Hugo is a static site generator that takes a directory with content and template
 
 By orchestrating the interaction between content, templates, configurations, and other features, Hugo is able to rapidly generate static websites that are easy to manage and deploy.
 
-
 All pages are markdown
 
 Site is a static site
@@ -63,14 +61,13 @@ Site is a static site
 Hugo template
 Hugo generates the static site from source
 
-Source is hosted in a free GitHub repository 
+Source is hosted in a free GitHub repository
 
 Netlify is hooked up to the GitHub repository and monitors the main branch, any changes it will spin up a small container and generate a new static site.
 
 The site is then moved to a CDN and hosted with an SSL certificate.
 
 ## The process on how I manage the blog
-
 
 Git repo, vs code on the mac with the following plugins
 
@@ -81,16 +78,14 @@ Git repo, vs code on the mac with the following plugins
 - Working copy (free)
 - iCloud Drive (Working Copy adds your synced GitHub repository in files)
 - Markdown editor of choice (i use either working copy and if I need pretty you have a free preview in working copy)
-- Keep all new posts, edits and changes on an unpublished branch. 
+- Keep all new posts, edits and changes on an unpublished branch.
 - Once you are happy, merge to your main branch and Netlify will build site and update your CDN
 
-
 ### Stuff to research
+
 - how does Hugo work
 - how does Netlify work
 - where does it host the stuff
-- how does the SSL cert work… 
+- how does the SSL cert work…
 
-
-URL - https://gohugo.io/hosting-and-deployment/hosting-on-netlify/
-
+URL - <https://gohugo.io/hosting-and-deployment/hosting-on-netlify/>

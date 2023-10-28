@@ -74,7 +74,6 @@ Cirrus Labs host their own images, the following command can pull down a finishe
 tart clone ghcr.io/cirruslabs/macos-sonoma-base:latest sonoma-base
 ```
 
-
 ### Save some time
 
 [^1]: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) In case like me you had to look this up.
