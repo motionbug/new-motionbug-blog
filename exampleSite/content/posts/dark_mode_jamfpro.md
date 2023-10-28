@@ -16,10 +16,9 @@ Arc had a great feature called [Boosts](https://arc.net/boosts)
 
 Once you have installed **Arc** make sure to setup your new browser. It may look a little different but there are a lot of cool features that you can make use of!
 
-### Check out the video below:
+### Check out the video below
 
-{{< youtube https://www.youtube.com/watch?v=sKUdS1LUzhs >}}
-
+{{< youtube sKUdS1LUzhs >}}
 
 ### Setting up dark mode
 
