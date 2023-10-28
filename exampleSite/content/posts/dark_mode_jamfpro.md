@@ -2,7 +2,7 @@
 title: Enable darkmode with a "boost" with Arc
 date: 2023-10-28
 description: "Can’t wait to use dark mode with Jamf Pro 11? Wait no longer! With the help of the Arc browser, I create a few boots that will let you use Jamf Pro 11 in dark mode."
-image: https://media.cleanshot.cloud/media/6155/tibRGE4sCPtPL0mxsOoZSjDyL8F9giHNQTxs4l8H.jpeg?Expires=1698530397&Signature=CC~pCXTYDRdZAVP2JaN~PKzlk8NvhIIRZuiZwvlLECrSoE5j0tjcVANBBKRqXV2Em0rLoot2EFPSt7P0c9GEW7MLv-ykisooUYCTMN~Y6ZXOlmLtq5DRpBGbOCU7PJUIR~tC6DfPQfRtiVRBZNeW3eJ-PD0rrk8jwYws17and9rQ~m2AUM4cd2LcWsqikC5D~UtxmtEmJcgFv~INWtrSueNxLm6NaXclvR4awAHecD-fFDUguCGVhy6YtowqIQ6fLkhDM6nIWsurgTHN5ALJUo1X7TUGNX4wSA~5XdnW9SyJ7z8XcCuLpFl39l~NzVtaXCQqDB9Oyg174PUl~ZtLkg__&Key-Pair-Id=K269JMAT9ZF4GZ
+image: https://share.cleanshot.com/QCWrmk5M
 tags: ['jamfpro', 'v11', 'hack']
 ---
 
@@ -16,10 +16,9 @@ Arc had a great feature called [Boosts](https://arc.net/boosts)
 
 Once you have installed **Arc** make sure to setup your new browser. It may look a little different but there are a lot of cool features that you can make use of!
 
-### Check out the video below:
+### Check out the video below
 
-{{< youtube https://www.youtube.com/watch?v=sKUdS1LUzhs >}}
-
+{{< youtube sKUdS1LUzhs >}}
 
 ### Setting up dark mode
 
