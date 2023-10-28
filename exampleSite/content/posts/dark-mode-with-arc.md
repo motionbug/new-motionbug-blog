@@ -1,6 +1,6 @@
 ---
 title: Enable darkmode with Jamf Pro 11 - with a boost from Arc
-date: 2023-10-29
+date: 2023-10-28
 description: 'Eager to experience dark mode in Jamf Pro 11? Your wait is over! Enhance your user experience with Arc and a whole lot more.'
 image: images/blog/darkmode.jpg
 tags: ['jamfpro', 'v11', 'hack']
