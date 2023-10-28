@@ -25,6 +25,7 @@ Thanks to the **macadmins** slack, there was a [thread discussing](https://macad
 First we need to get the current user's default keyboard reading the ID from `com.apple.HIToolbox.plist` and once we have that we can look up the keyboard from the OpenCore [list](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/ef2db45050c4aed6aa2e93d7c00df45706ab4e13/Utilities/AppleKeyboardLayouts/AppleKeyboardLayouts.txt).
 
 ### Final script
+
 The final script will find the keyboard, lookup the name/ID and run the `nvram` command. Easy to add this to a policy during the onboarding process to fix the keyboard on within FV login window.
 
 {{< gist motionbug f0820d062a7dcbaf5f18efc39d114f18 >}}
