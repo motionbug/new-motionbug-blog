@@ -1,5 +1,6 @@
 ---
 title: Enable darkmode with Jamf Pro 11 - with a "boost" from Arc
+date: 2023-10-29
 description: "Can’t wait to use dark mode with Jamf Pro 11? Wait no longer! With the help of the Arc browser, I create a few boots that will let you use Jamf Pro 11 in dark mode."
 image: images/blog/darkmode.jpg
 tags: ['jamfpro', 'v11', 'hack']
