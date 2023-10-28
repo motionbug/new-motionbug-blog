@@ -30,10 +30,10 @@ Up pops up the boost control panel
 
 ![controls](https://blog.motionbug.com/images/blog/boostdark.jpg)
 
-1. Click on the light image to enable dark mode.
-2. Select a colour that you would like to use, I settled on a blue tone.
-3. Using the following controls (A,B,C), you can adjust these sliders to get darker and more of a dark mode feel.
+- Click on the lightblub image to enable dark mode (A).
+- Select a colour that you would like to use, I settled on a blue tone (B).
+- Using the following controls you can adjust these sliders to get darker and more of a dark mode feel (1,2,3).
 
 ## In conclusion
 
-So an easy dark mode for Jamf Pro 11. Once you have set this up you can create different accented colors boosts for each of your Jamf Pro instances.
+So an easy dark mode for Jamf Pro 11. Once you have set this up you can create different accented colors boosts for each of your Jamf Pro instances. I have a couple instances of Jamf Pro, I have created a custom boost for each Jamf Pro server that I visit.
