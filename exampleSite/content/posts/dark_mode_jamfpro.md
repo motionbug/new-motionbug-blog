@@ -28,12 +28,12 @@ Navigate over to your Jamf Pro 11 instance. Hover over the URL bar to reveal the
 
 Up pops up the boost control panel
 
-![controls](https://share.cleanshot.com/lkjsHfWl+)
+![controls](images/blog/boostcolor.jpg)
 
 1. Click on the light image to enable dark mode.
 2. Select a colour that you would like to use, I settled on a blue tone.
 
-![darkercontrols](https://share.cleanshot.com/LGHYY5fR+)
+![darkercontrols](images/blog/boostdark.jpg)
 3. Using the following controls (A,B,C), you can adjust these sliders to get darker and more of a dark mode feel.
 
 ## In conclusion
