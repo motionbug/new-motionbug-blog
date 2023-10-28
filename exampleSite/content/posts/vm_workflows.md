@@ -16,6 +16,7 @@ Part 1 - The Free Apps
 - [Cirrus Labs - tart](#cirrus-labs---tart)
 - [How to install](#how-to-install)
   - [Pulling down an image](#pulling-down-an-image)
+  - [My  🥧 tart Worflow](#my---tart-worflow)
   - [Save some time](#save-some-time)
 
 Today, we’ll dive into the world of virtualization on macOS, focusing on Apple Silicon. There are some changes, the biggest change is that all virtualisation within macOS uses the [Apple virtualization framework](https://developer.apple.com/documentation/virtualization).
@@ -74,6 +75,40 @@ Cirrus Labs host their own images, the following command can pull down a finishe
 tart clone ghcr.io/cirruslabs/macos-sonoma-base:latest sonoma-base
 ```
 
+Available versions:
+
+- Monterey
+- Ventura
+- Sonoma
+
+With three different types provided:
+
+- base (image has only `brew` pre-installed)
+- vanilla (image has nothing pre-installed)
+- xcode (image and has `Xcode N` with `Flutter` pre-installed)
+
+### My  🥧 tart Worflow
+
+Install and pull down the base image:
+
+```shell
+brew install cirruslabs/cli/tart
+tart clone ghcr.io/cirruslabs/macos-sonoma-base:latest sonoma-base
+```
+
+Once installed run your image
+
+```shell
+tart run sonoma-base
+```
+
+🔼 So above would be the boaring way, with tart there are many options.
+
+That will startup your new VM, but there are options that can help with your workflow.
+
+```shell
+tart run --dir=project:~/tarttmp swupdate --no-graphics --vnc
+```
 
 ### Save some time
 
