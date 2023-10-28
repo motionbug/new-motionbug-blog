@@ -8,9 +8,9 @@ tags: ['jamfpro', 'v11', 'hack']
 
 ## Dark Mode Enhancement with Arc
 
-Firstly, you need to download Arc! Get it [here](https://arc.net)
+Firstly, you need to download Arc! Get it [here](https://arc.net), you won't be sorry.
 
-Arc boasts a fantastic feature called [Boosts](https://arc.net/boosts)
+Arc boasts a fantastic feature called [Boosts](https://arc.net/boosts).
 
 >*"Boosts present a novel way to edit, remix, and share your internet experience with friends. Create Boosts directly within Arc to elevate your browsing."*
 
