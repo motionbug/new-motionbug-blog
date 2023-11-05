@@ -5,7 +5,7 @@ description: "Utilise Arc Boosts with JavaScript to streamline and enhance multi
 image: https://share.cleanshot.com/npR9vjZq+
 tags: ['arc', 'jamfpro', 'boost']
 ---
-### Please Note:
+### Please Note
 
 >Continue reading only if you're interested in using Arc. Otherwise, this information may not be relevant to you.
 
