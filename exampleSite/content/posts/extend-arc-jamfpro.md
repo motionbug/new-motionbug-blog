@@ -14,8 +14,6 @@ Arc's Boost feature is pretty cool. As I wrote in the [last post](https://blog.m
 
 The capability to inject custom CSS and JavaScript means you can tailor any site to your liking. Whether it's implementing a dark mode, changing fonts, or even reorganizing layout elements, the power is in your hands.
 
-{{< ico moon >}}
-
 For those who manage more then one Jamf Pro site, Arc can be especially useful.
 
 ![simplerename](https://share.cleanshot.com/T135vBPZ+)
