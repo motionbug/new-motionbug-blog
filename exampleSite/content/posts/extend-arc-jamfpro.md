@@ -5,10 +5,9 @@ description: "Utilise Arc Boosts with JavaScript to streamline and enhance multi
 image: https://share.cleanshot.com/npR9vjZq+
 tags: ['arc', 'jamfpro', 'boost']
 ---
-### Please Note
 
 {{< box info >}}
-Continue reading only if you're interested in using Arc. Otherwise, this information may not be relevant to you.
+**Please Note:** Continue reading only if you're interested in using Arc. Otherwise, this information may not be relevant to you.
 {{< /box >}}
 
 Arc's Boost feature is pretty cool. As I wrote in the [last post](https://blog.motionbug.com/posts/dark-mode-with-arc/), we can change the colour of a site or even create our own custom dark mode. Moreover it extends beyond basic browser functionality, allowing you to apply custom tweaks—akin to user scripts of the past, but seamlessly integrated into your browsing experience.
