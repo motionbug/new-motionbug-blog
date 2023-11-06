@@ -18,7 +18,7 @@ For those who manage more then one Jamf Pro site, Arc can be especially useful.
 
 ![simplerename](https://share.cleanshot.com/T135vBPZ+)
 
-{{< ico "coffee" "boxicons" >}} Want to rename the **Pro** within the header of your Jamf Pro dashboard to reflect which Jamf Pro instance you are working on? Insert the following JavaScript code into an Arc Boost code feature, and replace 'New Text' with the name of your Jamf Pro instance what ever you want. Take it a step further and add some colour as well.
+Want to rename the **Pro** within the header of your Jamf Pro dashboard to reflect which Jamf Pro instance you are working on? Insert the following JavaScript code into an Arc Boost code feature, and replace 'New Text' with the name of your Jamf Pro instance what ever you want. Take it a step further and add some colour as well.
 
 ---
 ![walkthrough](https://share.cleanshot.com/D2RlNjKB+)
