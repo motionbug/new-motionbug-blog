@@ -6,7 +6,7 @@ image: https://share.cleanshot.com/npR9vjZq+
 tags: ['arc', 'jamfpro', 'boost']
 ---
 
-{{< box info >}}
+{{< box important >}}
 **Please Note:** Continue reading only if you're interested in using Arc. Otherwise, this information may not be relevant to you.
 {{< /box >}}
 
@@ -18,7 +18,7 @@ For those who manage more then one Jamf Pro site, Arc can be especially useful.
 
 ![simplerename](https://share.cleanshot.com/T135vBPZ+)
 
-Want to rename the **Pro** within the header of your Jamf Pro dashboard to reflect which Jamf Pro instance you are working on? Insert the following JavaScript code into an Arc Boost code feature, and replace 'New Text' with the name of your Jamf Pro instance what ever you want. Take it a step further and add some colour as well.
+{{< ico "coffee" "boxicons" >}} Want to rename the **Pro** within the header of your Jamf Pro dashboard to reflect which Jamf Pro instance you are working on? Insert the following JavaScript code into an Arc Boost code feature, and replace 'New Text' with the name of your Jamf Pro instance what ever you want. Take it a step further and add some colour as well.
 
 ---
 ![walkthrough](https://share.cleanshot.com/D2RlNjKB+)
