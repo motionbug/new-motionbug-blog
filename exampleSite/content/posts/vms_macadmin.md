@@ -27,7 +27,7 @@ In this post we will dive into various free options available for virtual machin
 - [**UTM**](https://github.com/utmapp/UTM)
 - [**VirtualBuddy**](https://github.com/insidegui/VirtualBuddy#virtualbuddy)
 
-## 1. Cirrus Labs - tart
+### 1. Cirrus Labs - tart
 
 ![vmheaderspace](https://blog.motionbug.com/images/blog/vm-header.jpg)
 
@@ -47,9 +47,15 @@ Cirrus Labs host their own images, the following command can pull down a finishe
 tart clone ghcr.io/cirruslabs/macos-sonoma-vanilla:latest nameyourvmhere
 ```
 
-{{< box important >}}
-**Note:** Make sure to pull down the vanilla image, as that will work fine with MDM enrollments. The base image does not seem to kickoff the MDM enrollment process.
+{{< box info >}}
+**Note:** Make sure to pull down the vanilla image, as that will work fine with MDM enrollments. The vanilla image is already setup, no setup assistant and already has an admin user setup. Screensharing and remote login also setup so you could connect via screensharing.
 {{< /box >}}
+
+### Install a fresh VM via an ipsw
+
+```shell
+tart create --from-ipsw ~/path/to/macosversion.ipsw mynewvm
+```
 
 ### Save some time
 
@@ -65,11 +71,6 @@ Best to have a shared folder so make sure to add the following to the command.
 tart run --dir=project:~/src/project mynewvm
 ```
 
-### Install a fresh VM via an ipsw
-
-```shell
-tart create --from-ipsw ~/path/to/macosversion.ipsw mynewvm
-```
 
 [^1]: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) In case like me you had to look this up.
 
