@@ -16,7 +16,6 @@ Part 1 - The Free Apps
 - [Cirrus Labs - tart](#cirrus-labs---tart)
 - [How to install](#how-to-install)
   - [Pulling down an image](#pulling-down-an-image)
-  - [Save some time](#save-some-time)
 
 Today, we’ll dive into the world of virtualization on macOS, focusing on Apple Silicon. There are some changes, the biggest change is that all virtualisation within macOS uses the [Apple virtualization framework](https://developer.apple.com/documentation/virtualization).
 
@@ -71,10 +70,14 @@ Once you have tart installed you will either need to pull down an image or you w
 Cirrus Labs host their own images, the following command can pull down a finished **sonama-base** image.
 
 ```shell
-tart clone ghcr.io/cirruslabs/macos-sonoma-base:latest sonoma-base
+tart clone ghcr.io/cirruslabs/macos-sonoma-vanilla:latest mynewvm
 ```
 
-### Save some time
+{{< box important >}}
+**Note:** Make sure to pull down the vanilla image, as that will work fine with MDM enrollments. The base image does not seem to kickoff the MDM enrollment process.
+{{< /box >}}
+
+
 
 [^1]: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) In case like me you had to look this up.
 
