@@ -1,5 +1,5 @@
 ---
-title: Exploring macOS Virtualization
+title: "Exploring macOS Virtualization - Part 1: Tart"
 date: 2023-11-16
 description: "Let's dive into the exciting world of virtual machines and discover some awesome ways to test our workflows. Things may have changed a bit, but that's just more reason for us to team up and uncover the best strategies together."
 image: https://blog.motionbug.com/images/blog/headervmmac.jpg
@@ -35,16 +35,11 @@ Some of the main changes with Virtualization are:
 
 In this post we will dive into various free options available for virtual machines (VMs) on your Applie Silicon Mac, all applicaitons will be utilizing the Apple virtualization framework. The difference lies in how each application interprets this framework. Choose an application that aligns best with your workflow from the options listed.
 
-- [**Cirrus Labs - tart**](https://tart.run/)
-- [**Viable**](https://eclecticlight.co/2022/07/14/introducing-viable-to-virtualise-macos-on-apple-silicon-macs/)
-- [**UTM**](https://github.com/utmapp/UTM)
-- [**VirtualBuddy**](https://github.com/insidegui/VirtualBuddy#virtualbuddy)
-
 ![weirdballmacs](https://blog.motionbug.com/images/blog/weirdballmacs.jpg)
 
-### Cirrus Labs Tart: A Command Line-Based Virtualization Tool
+### [Cirrus Labs Tart: A Command Line-Based Virtualization Tool](https://tart.run/)
 
-Cirrus Labs' 🥧 Tart is a specialized virtualization toolset designed for building, running, and managing macOS and Linux virtual machines on Apple Silicon, significantly enhancing performance and automation capabilities for CI[^1] engineers. 90% of your interaction with tart is via the command line but there is a GUI app that will render your VM. The killer feature with Tart is the use of images. You can make your own[^2] or use the ones already made within their repository. Then it is a matter of just creating a single use VM, test and then destroy.
+[Cirrus Labs](https://tart.run/) 🥧 Tart is a specialized virtualization toolset designed for building, running, and managing macOS and Linux virtual machines on Apple Silicon, significantly enhancing performance and automation capabilities for CI[^1] engineers. 90% of your interaction with tart is via the command line but there is a GUI app that will render your VM. The killer feature with Tart is the use of images. You can make your own[^2] or use the ones already made within their repository. Then it is a matter of just creating a single use VM, test and then destroy.
 
 ### How to install
 
@@ -66,9 +61,10 @@ Once you have tart installed you will either need to pull down an image from the
 
 4. **Setting Up a Shared Folder**: For optimal usage, add a shared folder to your VM command: `tart run --dir=project:~/src/project mynewvm`.
 
-### Viable: Perfect use with an external drive
+More to come -- Tart isn't just a fantastic little tool, it's also packed with features that I haven't even talked about yet. Stay tuned for more updates! 
 
----
+[Github Link](https://github.com/cirruslabs/tart/)
+![tartgithub](https://github.com/cirruslabs/tart/raw/main/Resources/TartSocial.png "{width='350'}")
 
 [^1]: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) In case like me you had to look this up.
 
