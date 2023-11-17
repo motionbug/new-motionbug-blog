@@ -27,37 +27,29 @@ In this post we will dive into various free options available for virtual machin
 - [**UTM**](https://github.com/utmapp/UTM)
 - [**VirtualBuddy**](https://github.com/insidegui/VirtualBuddy#virtualbuddy)
 
-### 1. Cirrus Labs - tart
-
-![vmheaderspace](https://blog.motionbug.com/images/blog/vm-header.jpg)
+### Cirrus Labs Tart: A Command Line-Based Virtualization Tool
 
 Cirrus Labs' 🥧 Tart is a specialized virtualization toolset designed for building, running, and managing macOS and Linux virtual machines on Apple Silicon, significantly enhancing performance and automation capabilities for CI[^1] engineers. 90% of your interaction with tart is via the command line but there is a GUI app that will render your VM. The killer feature with Tart is the use of images. You can make your own[^2] or use the ones already made within their repository. Then it is a matter of just creating a single use VM, test and then destroy.
 
 ### How to install
 
-You have two choices when it comes to installing, you can install via ‘brew’ or you can install via package. Check out the excelent webstie and [read the quick start guide.](https://tart.run/quick-start/)
+To install Tart, you have two options: either through 'brew' or a package installation. For detailed guidance, visit the [Tart Quick Start Guide](https://tart.run/quick-start/). Once installed, you can either download an image from the Cirrus Labs repo or install a fresh VM from a macOS IPSW file.
 
 Once you have tart installed you will either need to pull down an image from the Cirrus Labs repo, or you can need to install a fresh VM from a [macOS ipsw](https://mrmacintosh.com/apple-silicon-m1-full-macos-restore-ipsw-firmware-files-database/).
 
-### Pulling down an image
-
-Cirrus Labs host their own images, the following command can pull down a finished **sonama-base** image.
-
-```shell
-tart clone ghcr.io/cirruslabs/macos-sonoma-vanilla:latest nameyourvmhere
-```
+1. Pulling down an image with the following command `tart clone ghcr.io/cirruslabs/macos-sonoma-vanilla:latest nameyourvmhere` to download a pre-made image. The vanilla image comes pre-setup with no setup assistant, an admin user, and pre-configured screensharing and remote login.
 
 {{< box info >}}
-**Note:** Make sure to pull down the vanilla image, as that will work fine with MDM enrollments. The vanilla image is already setup, no setup assistant and already has an admin user setup. Screensharing and remote login also setup so you could connect via screensharing.
+**Note:** Make sure to pull down the vanilla image, as that will work fine with MDM enrollments.
 {{< /box >}}
 
-### Install a fresh VM via an ipsw
+### 2. Install a fresh VM via an ipsw
 
 ```shell
 tart create --from-ipsw ~/path/to/macosversion.ipsw mynewvm
 ```
 
-### Save some time
+### 3. Save some time
 
 Once you have pulled down your vanilla base image, you are ready to go with tart. You can start your VM with a simple command:
 
@@ -70,6 +62,7 @@ Best to have a shared folder so make sure to add the following to the command.
 ```shell
 tart run --dir=project:~/src/project mynewvm
 ```
+---
 
 
 [^1]: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) In case like me you had to look this up.
