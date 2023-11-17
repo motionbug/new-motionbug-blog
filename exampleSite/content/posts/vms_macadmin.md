@@ -66,8 +66,7 @@ Once you have tart installed you will either need to pull down an image from the
 
 4. **Setting Up a Shared Folder**: For optimal usage, add a shared folder to your VM command: `tart run --dir=project:~/src/project mynewvm`.
 
-### Using Viable: Perfect use with an external drive
-
+### Viable: Perfect use with an external drive
 
 ---
 
