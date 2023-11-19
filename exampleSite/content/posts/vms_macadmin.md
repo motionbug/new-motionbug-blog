@@ -63,8 +63,18 @@ Once you have tart installed you will either need to pull down an image from the
 
 More to come -- Tart isn't just a fantastic little tool, it's also packed with features that I haven't even talked about yet. Stay tuned for more updates! 
 
-[Github Link](https://github.com/cirruslabs/tart/)
-![tartgithub](https://github.com/cirruslabs/tart/raw/main/Resources/TartSocial.png "{width='350'}")
+{{< box tip >}}
+**Exciting Feature: Start a VM Without a GUI**
+
+ Did you know you can initiate a VM without a graphical user interface? Simply use the command `tart run --dir=project:~/src/project mynewvmta` **`--no-graphics --vnc`**
+ This allows you to connect via screen sharing, streamlining your workflow.
+
+![screensharing](https://blog.motionbug.com/images/blog/screensharing.png)
+
+Remember, the VM is pre-configured with an 'admin' user, and screen sharing is already enabled, making the process incredibly straightforward and user-friendly.
+{{< /box >}}
+
+[Check out their Github Link](https://github.com/cirruslabs/tart/)
 
 [^1]: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) In case like me you had to look this up.
 
